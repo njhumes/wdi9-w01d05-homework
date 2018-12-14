@@ -72,7 +72,7 @@ for(let i = 12; i < 401; i = i+3) {
     console.log(i);
 }
 // B. Get even
-for(let i = 0; i < 100; i++){
+for(let i = 0; i < 101; i++){
     if(i % 2 == 0){
         console.log(i);
     }
@@ -94,3 +94,19 @@ for (let i = 0; i < 11; i++){
     sum += i;
 }
 console.log(sum);
+
+//E. Multiples of 3 and 5
+// I read all the instructions and I know I did this already, just thought I needed more practice :)
+
+let eulerSum = 0;
+for(i = 0; i < 101; i++){
+    if(i % 3 == 0){
+        eulerSum+= i;
+    }
+    else if(i % 5 ==0){
+        eulerSum += i;
+    }
+}
+console.log(eulerSum);
+
+// III. Arrays and Control Flow
