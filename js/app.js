@@ -87,3 +87,10 @@ for(let i = 0; i < 100; i++) {
         console.log(`I found a ${i}. Three is a crowd`);
     }
 }
+
+// D. Savings Account
+let sum = 0;
+for (let i = 0; i < 11; i++){
+    sum += i;
+}
+console.log(sum);
