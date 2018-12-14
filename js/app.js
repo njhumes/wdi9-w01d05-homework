@@ -58,3 +58,22 @@ if (age >= 16) {
 else {
     console.log('Sorry, you\'re too young');
 }
+
+// II. Loops
+// A. The Basics
+
+for(let i = 0; i < 11; i++) {
+    console.log(i);
+}
+for(let i = 10; i < 401; i++){
+    console.log(i);
+}
+for(let i = 12; i < 401; i = i+3) {
+    console.log(i);
+}
+// B. Get even
+for(let i = 0; i < 100; i++){
+    if(i % 2 == 0){
+        console.log(i);
+    }
+}
