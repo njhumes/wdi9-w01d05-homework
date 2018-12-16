@@ -345,3 +345,15 @@ for (let i = 0; i < user.purchased.length; i++){
 for (let i = 0; i < user.friend.purchased.length; i++){
     console.log(user.friend.purchased[i]);
 }
+
+function updateUser() {
+    user.age++;
+    user.name = user.name.toUpperCase();
+    console.log(user);
+}
+updateUser();
+function oldAndLoud(person) {
+    person.age++;
+    person.name = person.name.toUpperCase();
+}
+oldAndLoud(user.friend);
