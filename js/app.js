@@ -182,3 +182,16 @@ console.log(kristynsCloset);
 kristynsCloset[5] = 'stained knit hat'
 console.log(kristynsCloset);
 console.log(`Thom is looking fierce in his ${thomsCloset[0][0]}, ${thomsCloset[1][1]}, and ${thomsCloset[2][1]}`);
+
+
+// IV. Functions
+function printGreeting(name) {
+    console.log(`Hey there ${name}`);
+}
+printGreeting('slimer');
+// Did it twice...
+
+function printCool(name) {
+    console.log(`${name} is cool`);
+}
+printCool('Nick');
