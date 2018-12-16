@@ -195,3 +195,8 @@ function printCool(name) {
     console.log(`${name} is cool`);
 }
 printCool('Nick');
+
+function calculateCool(num) {
+    return num * num * num;
+}
+console.log(calculateCool(5));
