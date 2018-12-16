@@ -306,3 +306,19 @@ function getRandomElement(quoteArr) {
     return quoteArr[random];
 }
 console.log(getRandomElement(quotes));
+
+const user = {
+    name: 'Ziggy',
+    email: 'ziggy@stardust.com',
+    age: 7,
+    purchased: [],
+}
+user.email = 'newemail@test.com';
+user.age++;
+user.location = 'Denver';
+user.purchased.push('carbohydrates');
+user.purchased.push('peace of mind');
+user.purchased.push('Merino jodhpurs');
+
+console.log(user);
+console.log(user.purchased[2]);
