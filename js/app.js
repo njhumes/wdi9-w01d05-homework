@@ -110,3 +110,9 @@ for(i = 0; i < 101; i++){
 console.log(eulerSum);
 
 // III. Arrays and Control Flow
+// A. Talk about it
+//1. Values
+//2. Unless they are manipulated
+//3. You could model any item that contains different items inside it, like a wallet. Your wallet would be the array variable, with your ID and different cards, cash etc. being the values
+
+const quotes = ['Anything worth doing is worth doing badly', 'Watch out the worlds behind you', 'My candle burns at both ends, it will not last the night. But ah, my foes, and oh, my friends - it gives such a lovely light']
