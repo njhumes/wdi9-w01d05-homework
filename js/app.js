@@ -230,3 +230,39 @@ function getMultipleLengths(strArr) {
     return paramLength;
 }
 console.log(getMultipleLengths(['one', 'last', 'night', 'on', 'earth']));
+
+let largestNumba = '';
+function maxOfThree (numba1, numba2, numba3) {
+    for (let i = 0; i < 4 ; i++) {
+        if (numba1 > numba2) {
+            largestNumba = numba1;
+        }
+        else if (numba1 > numba3) {
+            largestNumba = numba1;
+        }
+        else if (numba2 > numba3) {
+            largestNumba = numba2;
+        }
+        else {
+            largestNumba = numba3;
+        }
+        return largestNumba;
+    }
+}
+
+console.log(maxOfThree(3, 7, 4));
+// need help with this one ~~~~~~~~~~
+
+let longest;
+function printLongestWord (strArr) {
+    longest = strArr[0];
+    for(let i = 1; i < strArr.length; i++) {
+        if (longest.length < strArr[i].length) {
+            longest = strArr[i];
+            }
+        }
+    return longest;
+    }
+    
+    
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Toddd"]));
