@@ -122,3 +122,7 @@ const randomThingss = [1, 10, 'Hello', true];
 randomThingss[0];
 randomThingss[2] = 'World';
 console.log(randomThingss);
+const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
+ourClass[2];
+ourClass[4] = 'Octocat';
+ourClass.push('Cloud City');
