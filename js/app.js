@@ -322,3 +322,19 @@ user.purchased.push('Merino jodhpurs');
 
 console.log(user);
 console.log(user.purchased[2]);
+
+user.friend = {
+    name: 'Larry',
+    age: '3',
+    location: 'New York',
+    purchased: [],
+}
+
+console.log(user);
+console.log(user.friend.name);
+console.log(user.friend.location);
+user.friend.age = 55;
+user.friend.purchased.push('The One Ring');
+user.friend.purchased.push('A latte');
+console.log(user.friend.purchased[1]);
+console.log(user);
