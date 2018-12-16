@@ -116,3 +116,9 @@ console.log(eulerSum);
 //3. You could model any item that contains different items inside it, like a wallet. Your wallet would be the array variable, with your ID and different cards, cash etc. being the values
 
 const quotes = ['Anything worth doing is worth doing badly', 'Watch out the worlds behind you', 'My candle burns at both ends, it will not last the night. But ah, my foes, and oh, my friends - it gives such a lovely light']
+
+//C. Accessing Elements
+const randomThingss = [1, 10, 'Hello', true];
+randomThingss[0];
+randomThingss[2] = 'World';
+console.log(randomThingss);
