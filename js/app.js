@@ -134,3 +134,11 @@ myArray.unshift('Bob Marley');
 myArray.pop();
 myArray.reverse();
 console.log(myArray);
+let myInt = 33;
+if(myInt > 10){
+    console.log('big number');
+} else if (myInt < 5) {
+    console.log('small number');
+} else {
+    console.log('monkey')
+}
