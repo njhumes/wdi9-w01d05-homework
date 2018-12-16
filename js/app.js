@@ -115,7 +115,7 @@ console.log(eulerSum);
 //2. Unless they are manipulated
 //3. You could model any item that contains different items inside it, like a wallet. Your wallet would be the array variable, with your ID and different cards, cash etc. being the values
 
-const quotes = ['Anything worth doing is worth doing badly', 'Watch out the worlds behind you', 'My candle burns at both ends, it will not last the night. But ah, my foes, and oh, my friends - it gives such a lovely light']
+let quotes = ['Anything worth doing is worth doing badly', 'Watch out the worlds behind you', 'My candle burns at both ends, it will not last the night. But ah, my foes, and oh, my friends - it gives such a lovely light']
 
 //C. Accessing Elements
 const randomThingss = [1, 10, 'Hello', true];
@@ -273,3 +273,36 @@ function transmogrify(num1, num2, num3) {
     console.log(total);
 }
 transmogrify(5, 3, 2);
+
+let backStr;
+function reverseWordOrder(str) {
+    for (let i = 0; i < str.length; i++) {
+
+    }
+}
+
+let testStr = ('Hey now whats up')
+console.log(testStr[2]);
+console.log(testStr[11]);
+
+// Go BACK TO THIS ONE
+
+console.log(Math.floor(Math.random()* 10));
+console.log(Math.floor(Math.random() * 100));
+function getIntRange(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    console.log(Math.floor(Math.random() * (max - min) + min));
+}
+getIntRange(22, 33);
+getIntRange(532, 13267);
+getIntRange(1, 10);
+
+quotes = ['Anything worth doing is worth doing badly', 'Watch out the worlds behind you', 'My candle burns at both ends, it will not last the night. But ah, my foes, and oh, my friends - it gives such a lovely light']
+
+
+function getRandomElement(quoteArr) {
+    let random = Math.floor(Math.random() * quoteArr.length);
+    return quoteArr[random];
+}
+console.log(getRandomElement(quotes));
