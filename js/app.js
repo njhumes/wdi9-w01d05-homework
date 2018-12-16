@@ -200,3 +200,33 @@ function calculateCool(num) {
     return num * num * num;
 }
 console.log(calculateCool(5));
+
+function isVowel(char) {
+    char.toLowerCase();
+    if (char === 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
+        console.log(`${char} is a vowel`);
+    } else {
+        console.log(`${char} is not a vowel`);
+    }
+}
+isVowel('e')
+isVowel('w');
+isVowel('o');
+isVowel('b');
+isVowel('a');
+
+let newArr = [];
+function getTwoLengths(str1, str2) {
+    newArr = [str1.length, str2.length];
+    return newArr;
+}
+console.log(getTwoLengths('The', 'Beatles'));
+
+let paramLength = [];
+function getMultipleLengths(strArr) {
+    for(let i = 0; i < strArr.length; i++) {
+    paramLength[i] = strArr[i].length;
+    }
+    return paramLength;
+}
+console.log(getMultipleLengths(['one', 'last', 'night', 'on', 'earth']));
