@@ -126,3 +126,11 @@ const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github"]
 ourClass[2];
 ourClass[4] = 'Octocat';
 ourClass.push('Cloud City');
+const myArray = [5, 10, 500, 20];
+myArray.push('Egon');
+myArray.push('the strokes');
+myArray.shift();
+myArray.unshift('Bob Marley');
+myArray.pop();
+myArray.reverse();
+console.log(myArray);
