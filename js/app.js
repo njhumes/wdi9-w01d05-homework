@@ -263,6 +263,13 @@ function printLongestWord (strArr) {
         }
     return longest;
     }
-    
-    
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Toddd"]));
+
+let result;
+let total;
+function transmogrify(num1, num2, num3) {
+    result = (num1 * num2);
+    total = Math.pow(result, num3);
+    console.log(total);
+}
+transmogrify(5, 3, 2);
