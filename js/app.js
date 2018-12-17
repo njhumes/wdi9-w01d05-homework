@@ -238,31 +238,17 @@ function getMultipleLengths(strArr) {
 console.log(getMultipleLengths(['one', 'last', 'night', 'on', 'earth']));
 
 // G. Max of Three
-let largestNumba = [];
+let largestNumba;
 function maxOfThree (numbaArr) {
+    largestNumba = numbaArr[0];
     for (let i = 1; i < numbaArr.length ; i++) {
-        largestNumba = numbaArr[0];
         if (largestNumba < numbaArr[i]){
             largestNumba = numbaArr[i];
         }
-       
-        // if (numba1 > numba2) {
-        //     largestNumba = numba1;
-        // }
-        // else if (numba1 > numba3) {
-        //     largestNumba = numba1;
-        // }
-        // else if (numba2 > numba3) {
-        //     largestNumba = numba2;
-        // }
-        // else {
-        //     largestNumba = numba3;
-        // }
-        // return largestNumba;
-    }
     return largestNumba;
+    }
 }
-console.log(maxOfThree[3, 7, 4]);
+console.log(maxOfThree([3, 7, 9]));
 // need help with this one ~~~~~~~~~~
 
 // H. Print Longest Word
