@@ -191,16 +191,20 @@ function printGreeting(name) {
 printGreeting('slimer');
 // Did it twice...
 
+// B. Print Cool
+
 function printCool(name) {
     console.log(`${name} is cool`);
 }
 printCool('Nick');
 
+// C. Calculate Cool
 function calculateCool(num) {
     return num * num * num;
 }
 console.log(calculateCool(5));
 
+//D. Is Vowel
 function isVowel(char) {
     char.toLowerCase();
     if (char === 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u') {
@@ -215,6 +219,7 @@ isVowel('o');
 isVowel('b');
 isVowel('a');
 
+// E. Get Two Lengths
 let newArr = [];
 function getTwoLengths(str1, str2) {
     newArr = [str1.length, str2.length];
@@ -222,6 +227,7 @@ function getTwoLengths(str1, str2) {
 }
 console.log(getTwoLengths('The', 'Beatles'));
 
+// F. Get Multiple Lengths
 let paramLength = [];
 function getMultipleLengths(strArr) {
     for(let i = 0; i < strArr.length; i++) {
@@ -231,28 +237,35 @@ function getMultipleLengths(strArr) {
 }
 console.log(getMultipleLengths(['one', 'last', 'night', 'on', 'earth']));
 
-let largestNumba = '';
-function maxOfThree (numba1, numba2, numba3) {
-    for (let i = 0; i < 4 ; i++) {
-        if (numba1 > numba2) {
-            largestNumba = numba1;
+// G. Max of Three
+let largestNumba = [];
+function maxOfThree (numbaArr) {
+    for (let i = 1; i < numbaArr.length ; i++) {
+        largestNumba = numbaArr[0];
+        if (largestNumba < numbaArr[i]){
+            largestNumba = numbaArr[i];
         }
-        else if (numba1 > numba3) {
-            largestNumba = numba1;
-        }
-        else if (numba2 > numba3) {
-            largestNumba = numba2;
-        }
-        else {
-            largestNumba = numba3;
-        }
-        return largestNumba;
+       
+        // if (numba1 > numba2) {
+        //     largestNumba = numba1;
+        // }
+        // else if (numba1 > numba3) {
+        //     largestNumba = numba1;
+        // }
+        // else if (numba2 > numba3) {
+        //     largestNumba = numba2;
+        // }
+        // else {
+        //     largestNumba = numba3;
+        // }
+        // return largestNumba;
     }
+    return largestNumba;
 }
-
-console.log(maxOfThree(3, 7, 4));
+console.log(maxOfThree[3, 7, 4]);
 // need help with this one ~~~~~~~~~~
 
+// H. Print Longest Word
 let longest;
 function printLongestWord (strArr) {
     longest = strArr[0];
@@ -265,6 +278,7 @@ function printLongestWord (strArr) {
     }
 console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Toddd"]));
 
+// I. Transmogrify
 let result;
 let total;
 function transmogrify(num1, num2, num3) {
@@ -274,19 +288,16 @@ function transmogrify(num1, num2, num3) {
 }
 transmogrify(5, 3, 2);
 
+//J. Reverse Word Order
 let backStr;
 function reverseWordOrder(str) {
     for (let i = 0; i < str.length; i++) {
 
     }
 }
-
-let testStr = ('Hey now whats up')
-console.log(testStr[2]);
-console.log(testStr[11]);
-
 // Go BACK TO THIS ONE
 
+// K. Math Random
 console.log(Math.floor(Math.random()* 10));
 console.log(Math.floor(Math.random() * 100));
 function getIntRange(min, max) {
@@ -307,6 +318,8 @@ function getRandomElement(quoteArr) {
 }
 console.log(getRandomElement(quotes));
 
+// Objects
+// A. Make a user Object
 const user = {
     name: 'Ziggy',
     email: 'ziggy@stardust.com',
@@ -339,6 +352,7 @@ user.friend.purchased.push('A latte');
 console.log(user.friend.purchased[1]);
 console.log(user);
 
+// Loops
 for (let i = 0; i < user.purchased.length; i++){
     console.log(user.purchased[i]);
 }
@@ -346,6 +360,7 @@ for (let i = 0; i < user.friend.purchased.length; i++){
     console.log(user.friend.purchased[i]);
 }
 
+// Functions can operate on objects
 function updateUser() {
     user.age++;
     user.name = user.name.toUpperCase();
@@ -357,3 +372,31 @@ function oldAndLoud(person) {
     person.name = person.name.toUpperCase();
 }
 oldAndLoud(user.friend);
+
+// Hungry for More
+const cat1 = {
+    name: 'eleanor',
+    breed: 'black cat',
+    age: 10,
+}
+const cat2 = {
+    name: 'rigby',
+    breed: 'grey cat',
+    age: 12,
+}
+function combineCats(mama, papa) {
+    console.log(mama, papa);
+}
+// combineCats(cat1, cat2);
+
+let cat3= [];
+function breedCats(mama, papa) {
+    cat3.name = mama.name + papa.name;
+    cat3.age = 1;
+    cat3.breed = mama.breed + '-' + papa.breed;
+
+}
+breedCats(breedCats(cat1, cat2) , breedCats(cat1, cat2));
+// breedCats(breedCats(cat1, cat2), breedCats(cat1, cat2));
+console.log(cat3);
+// need help
